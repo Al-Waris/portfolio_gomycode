@@ -1,121 +1,292 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <title>My portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"/>
+    <title>Mon portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-
-    <header class="header">
-        <a href="#accueil" class="logo">Rimka <span>Al Waris</span></a>
-        <nav class="nav">
-            <ul>
-                <li><a href="#accueil" class="active">Accueil</a></li>
-                <li><a href="#about">À propos</a></a></li>
-                <li><a href="#travail">Travail</a></li>
-                <li><a href="#cv">CV</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main>
-        <section class="about" id="about">
-            <div>
-                <img src="" alt="">
-                <p>Je suis OUATTARA DOSSIGUE KARIM, <br>ingénieur agronome et passionné du developpemnt Web</p>
-
+    
+    <div class="content-header">
+        <header>
+            <div class="logo">
+                <a href="#">Rimka</a>
             </div>
-        </section>
-        <section class="travail" id="travail">
-
-            <h1>Expérience</h1>
-            <div class="taf">
-
-                <h2>Chargé de cartographie</h2>
-                <h3>Projet MARIGO</h3>
+            <nav id="nav">
                 <ul>
-                    <li>cartographie des zones maraîchers des villes de Korhogo, Bouaké, Yamoussoukro et Abidjan;
-                    </li>
-                    <li>carte de l'occupation des sols de la côte d'Ivoire;</li>
-                    <li>carte des aires protégées de la côte d'Ivoire ;</li>
-                    <li>épuration de données.</li>
+                    <li><a href="#accueil" >ACCUEIL</a></li>
+                    <li><a href="#about">A PROPOS</a></li>
+                    <li><a href="#competences" >COMPETENCES</a></li>
+                    <li><a href="#cv" >CV</a></li>
+                    <li><a href="#contact" >CONTACTS</a></li>
                 </ul>
+            </nav>
+            <div class="nav-responsive">
+                <i class="fa-solid fa-bars"></i>
             </div>
-            <div class="taf">
-                <h2>Chargé de cartographie des sols</h2>
-                <h3>Projet Réva-Téné</h3>
-                <ul>
-                    <li>identification des types de sols présents sur le dispositif;</li>
-                    <li>élaboration d'une carte de répartition des sols identités;</li>
-                    <li>analyse de la relation sol végétation.</li>
-                </ul>
-            </div>
-            <div class="taf">
-                <h2>Ingénieur assistant</h2>
-                <h3>École Supérieure d'Agronomie <abbr></abbr>(ESA)</abbr> </h3>
-                <ul>
-                    <li>formation des enquêteurs à l'utilisation d'un GPS;</li>
-                    <li>formation des enquêteurs au mapping d'une parcelle agricole;</li>
-                    <li>mise en place et déploiement d'un questionnaire numérique de collecte de données.</li>
-                </ul>
-            </div>
+        </header>
+    </div>
+    
 
-        </section>
-        <section class="cv" id="cv"></section>
-        <section class="contact" id="contact">
-            <h1>Me Contacter</h1>
-            <form action="">
-                <div class="inputBox">
-                    <input type="text" placeholder="Votre nom" >
-                    <input type="email" placeholder="Votre mail" >
+
+    <section id="accueil" class="accueil">
+        <div class="banner-contenu">
+            <div class="contenu">
+                <img src="img/photo.jpg" alt="">
+            </div>
+            <h1>OUATTARA DOSSIGUE</h1>
+            <h2>Developpeur - Full-Stack js</h2>
+            <div class="media">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </section>
+    
+
+
+    <section id="about" class="about">
+        <div class="section-contenu">
+            <h2>Qui suis-je</h2>
+            <p><span>Salut !! je suis OUATTARA Dossigue,</span> Developpeur web, passionné de données et de SIG.</p>
+
+            <div class="line">
+                
+                <div class="col">
+                    <h3>Mes informations</h3>
+                    <ul>
+                        
+                        <li>
+                            <strong>Téléphone</strong>
+                            07 07 00 00 00
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            rimka@example.com
+                        </li>
+                        <li>
+                            <strong>Disponibilité</strong>
+                            <span>FREELANCE</span>
+                        </li>
+                    </ul>
                 </div>
-                <div class="inputBox">
-                    <input type="number" placeholder="Votre numéro" >
-                    <input type="text" placeholder="Votre address" >
+
+                
+                <div class="col">
+                    <h3>Hobbies</h3>
+                    <div class="conteneur-hobbies">
+                        <div class="hobbies">
+                            <i class="fas fa-running"></i>
+                            <span>SPORT</span>
+                        </div>
+                        <div class="hobbies">
+                            <i class="fas fa-laptop-code"></i>
+                            <span>CODE</span>
+                        </div>
+                        <div class="hobbies">
+                            <i class="fa-solid fa-book"></i>
+                            <span>LECTURES</span>
+                        </div>
+                        
+                    </div>
                 </div>
-                <textarea placeholder="Votre message" name="" id="" cols="30" rows="10"></textarea>
-                <input type="submit" value="Envoyer" class="btn">
-            </form>
-        </section>
-
-    </main>
-
-
-    <footer class="footer">
-        <div class="row">
-            <div class="footer-col first">
-                <a href="#accueil" class="logo">Rimka <span>Al Waris</span></a>
-                <p>Je suis OUATTARA DOSSIGUE KARIM, developpeur JS</p>
             </div>
-            <div class="footer-col">
-                <h4>Liens</h4>
-                <ul>
-                    <li><a href="#accueil" class="active">Accueil</a></li>
-                    <li><a href="#about">À propos</a></a></li>
-                    <li><a href="#travail">Travail</a></li>
-                    <li><a href="#cv">CV</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
+            <button>
+                Télécharger CV <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </button>
+        </div>
+    </section>
 
-            </div>
-            <div class="footer-col">
-                <h4>Nous suivre</h4>
-                <div class="social-links">
-                    <a target="_blank" href="https://www.facebook.com/Rimka-Al-Waris/">
-                        <i class="fab fa-facebook-f"></i></a>
-                    <a target="_blank" href="https://www.linkedin.com/in/ouattara-dossigue/">
-                        <i class="fab fa-linkedin-in"></i></a>
+    
+    <section class="competences" id="competences">
+        <div class="section-contenu">
+            <h2>competences</h2>
+            <div class="line">
+                
+                <div class="col">
+                    <h3>Hardskills</h3>
+                    <div class="skill">
+                        <span>Javascript</span>
+                        <div class="bar-skill">
+                            <div class="progression" style="--progress:30%;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>HTML & CSS</span>
+                        <div class="bar-skill">
+                            <div class="progression" style="--progress:40%;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>NodeJS</span>
+                        <div class="bar-skill">
+                            <div class="progression" style="--progress:1%;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>MongoBD</span>
+                        <div class="bar-skill">
+                            <div class="progression" style="--progress:5%;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col">
+                    <h3>Soft skills</h3>
+                    <div class="skill">
+                        <span>Communication</span>
+                        <div class="bar-skill">
+                            <div class="progression" style="--progress:80%;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Travail en équipe</span>
+                        <div class="bar-skill">
+                            <div class="progression" style="--progress:70%;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Rigueur</span>
+                        <div class="bar-skill">
+                            <div class="progression" style="--progress:90%;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Gestion de projet</span>
+                        <div class="bar-skill">
+                            <div class="progression" style="--progress:50%;">
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+    </section>
+
+    
+    <section id="cv" class="cv">
+        <div class="section-contenu">
+            <h2>cv</h2>
+            <div class="line">
+                <div class="col gauche">
+                    <h3>Formations</h3>
+                    <div class="item left">
+                        <h4>Ingénieur Agro-pédologue</h4>
+                        <span class="lieu">INP-HB Yamoussoukro</span>
+                        <span class="date">2021 - 2022</span>
+                        <div class="conecteur">
+                            <div class="cercle"></div>
+                        </div>
+                    </div>
+                    <div class="item left">
+                        <h4>Ingénieur Agronome généraliste</h4>
+                        <span class="lieu">INP-HB Yamoussoukro</span>
+                        <span class="date">2019 - 2021</span>
+                        <div class="conecteur">
+                            <div class="cercle"></div>
+                        </div>
+                    </div>
+                    <div class="item left">
+                        <h4>Classe préparatoire aux grandes écoles</h4>
+                        <span class="lieu">INP-HB Yamoussoukro</span>
+                        <span class="date">2017 - 2019</span>
+                        <div class="conecteur">
+                            <div class="cercle"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col droite">
+                    <h3>Expériences</h3>
+                    <div class="item right">
+                        <h4>Chargé de cartographie</h4>
+                        <span class="lieu">Marigo</span>
+                        <span class="date">Janvier 2023 - Mars 2023</span>
+                        <ul>
+                            <li>cartographie des zones maraîchers des villes de Korhogo, Bouaké, Yamoussoukro et Abidjan;
+                            </li>
+                            <li>carte de l'occupation des sols de la côte d'Ivoire;</li>
+                            <li>carte des aires protégées de la côte d'Ivoire ;</li>
+                            <li>épuration de données.</li>
+                        </ul>
+                        <div class="connecteur-d">
+                            <div class="cercle-d"></div>
+                        </div>
+                    </div>
+                    <div class="item right">
+                        <h4>Chargé de cartographie des sols</h4>
+                        <span class="lieu">Projet Réva-Téné</span>
+                        <span class="date">Mars 2022 - Décembre 2022</span>
+                        <ul>
+                            <li>identification des types de sols présents sur le dispositif;</li>
+                            <li>élaboration d'une carte de répartition des sols identités;</li>
+                            <li>analyse de la relation sol végétation.</li>
+                        </ul>
+                        
+                        <div class="connecteur-d">
+                            <div class="cercle-d"></div>
+                        </div>
+                    </div>
+                    <div class="item right">
+                        <h4>Ingénieur assistant</h4>
+                        <span class="lieu">École Supérieure d'Agronomie</span>
+                        <span class="date">Juin 2021 - Août 2021</span>
+                        <ul>
+                            <li>formation des enquêteurs à l'utilisation d'un GPS;</li>
+                            <li>formation des enquêteurs au mapping d'une parcelle agricole;</li>
+                            <li>mise en place et déploiement d'un questionnaire numérique de collecte de données.</li>
+                        </ul>
+                        
+                        <div class="connecteur-d">
+                            <div class="cercle-d"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    
+    <section id="contact" class="contact">
+        <div class="section-contenu">
+            <h2>contact</h2>
+            <div class="line">
+                
+                <div class="col">
+                    <input type="text" placeholder="Nom">
+                    <input type="text" placeholder="Téléphone">
+                    <input type="text" placeholder="Adresse mail">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Messages"></textarea>
+                    <button>
+                        Envoyer un message<i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <a href="#accueil" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
     </footer>
 
-</body>
+    <div class="inspire">Inspiré par <span> Nick PEREZ</span></div>
 
+    
+</body>
 </html>
